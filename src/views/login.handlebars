@@ -1,0 +1,96 @@
+<div class="container-login-ppal">
+    <div class="container-form-login">
+        <h1 style="display:flex ; justify-content:center; border-bottom: 3px solid #007bff; padding: 8px ">{{title}}</h1>
+        <h2 class="subtitulos">Inicia sesion en tu cuenta</h2>
+        <div class="container-form">
+            <form action="/api/sessions/login" method="post">
+            <div>
+                <div class="label">
+                    <label for="email">Email</label>
+                    <br />
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+                </div>
+                <div class="label">
+                    <label for="password">Password</label>
+                    <br />
+                    <input type="password" id="password" name="password" placeholder="12345" required />
+                </div>
+                <div class="div-btn">
+                    <button class="btn-ingresar" type="submit">Ingresar</button>
+                </div>
+                
+            </div>
+        </form>
+        </div>
+        
+        <div class="container-register">
+            <div class="container-btn-register">
+                <p class="p-login">
+                ¿No tienes una cuenta? 
+                <a href="/register" class="text-blue-600 hover:underline font-semibold">Regístrate</a>
+                </p>
+            </div>
+            <div class="container-btn-login">
+                <a class="btn-google" href="/api/sessions/auth/google">
+                    <img class="img-google" src="https://www.svgrepo.com/show/303108/google-icon-logo.svg" alt="Google Logo" />
+                    Ingresar con Google
+                </a>
+            </div>
+            
+            <div class="container-btn-login">
+                <p class="p-login">
+                    ¿Olvidaste tu contraseña? 
+                    <a href="/recupero" class="text-blue-600 hover:underline font-semibold">Recupérala aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-menu-ppal">
+        <h2 style="font-size:28px ;">Lo que necesitas saber para tu declaración de renta, año gravable 2024. </h2>
+        <br>
+        <div>
+            <img style="width: 720px; height: 560px; border-radius: 10px;" src="http://localhost:3000/images/renta.jpg" alt="">
+        </div>
+        <br>
+        <p>Si deseas ver el calendario tributario 2025, click aquí: --->   <span class="span-calendar"><a href="https://www.dian.gov.co/Calendarios/Calendario_Tributario_2025.pdf">VER CALENDARIO.</a></span></p>
+    </div>
+</div>
+<footer>
+  <div class="container-footer">
+    <div class="footer-box">
+      <h3>Síguenos en redes sociales</h3>
+      <ul>
+        <li class="li-img-footer">
+          <a href="https://wa.me/573137502693" target="_blank">
+            <img src="/images/whatsapp.jpg" alt="WhatsApp" />
+          </a>
+        </li>
+        <li class="li-img-footer">
+          <a href="https://www.instagram.com/contables.ecg/" target="_blank">
+            <img src="/images/logo-ig.avif" alt="Instagram" />
+          </a>
+        </li>
+        <li class="li-img-footer">
+          <a href="https://www.facebook.com/profile.php?id=61563365072527" target="_blank">
+            <img src="/images/facebook-logo.png" alt="Facebook" />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Ciudad Bolívar</h3>
+        <p><strong>Dirección:</strong> Kape oficina 103</p>
+        <p><strong>Cel:</strong> 3137502693</p>
+        <p><strong>Email:</strong> contables.ecg@gmail.com</p>
+    </div>
+
+    <div class="footer-box">
+      <p>&copy; Contables ECG</p>
+      <p>&copy; Hecho por Haiver Hernandez. 2025</p>
+    </div>
+  </div>
+</footer>
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/contables.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <title>{{#if title}}{{title}}{{else}}Inicio{{/if}}</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="../images/contables.png" class="logo" alt="Logo" />
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <nav class="container-a">
+        <a href="/">Inicio</a>
+        <a href="/sobre-nosotros">Sobre nosotros</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+      {{#if user}}
+  <form action="/api/sessions/logout" method="post">
+    <button id="ingreso" type="submit">Salir</button>
+  </form>
+{{else}}
+  <a id="ingreso" href="/login">Iniciar sesión</a>
+{{/if}}
+    </header>
+    <main class="container">
+      {{{body}}}
+    </main>
+ 
+  <script src="/js/index.js"></script>
+</body>
