@@ -43,4 +43,4 @@ El objetivo de este sitio es proporcionar una plataforma informativa para los cl
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/HaiverHdz/Backend-II.git
+   git clone https://github.com/HaiverHdz/ECG-Contables.git
