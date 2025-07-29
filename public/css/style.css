@@ -455,12 +455,18 @@ a[role="button"]:disabled {
   padding: 10px;
   margin: 15px;
   width: 350px;
-  height: auto; /* que se adapte a contenido */
-  flex-wrap: wrap; /* permite que los elementos bajen */
+  height: auto; 
+  flex-wrap: wrap; 
   gap: 10px;
   transition: background-color 0.3s ease;
   overflow: hidden;
   z-index: 1;
+}
+
+.box-2 img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
 }
 
 .box-2 p {
