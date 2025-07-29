@@ -845,30 +845,31 @@ a[role="button"]:disabled {
   .container-a.show {
     display: flex;
   }
+  .section-box-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    width: 100%;
+  }
+  .container-box-2{
+    margin-top: 20px;
+    margin-right: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: auto;
+  }
+   
 }
 
 
 
-.section-box-2{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 450px;
-  width: 100%;
-}
-.container-box-2{
-  margin-top: 20px;
-  margin-right: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: auto;
-}
- 
+
 
  
 
