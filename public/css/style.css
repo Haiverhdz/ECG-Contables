@@ -398,6 +398,14 @@ a[role="button"]:disabled {
 
 @media (max-width: 768px){
   @media (max-width: 768px) {
+    .box p {
+      white-space: normal;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
     .box-mision {
       width: 95%;
       font-size: 16px;
@@ -512,8 +520,8 @@ a[role="button"]:disabled {
   margin: 0;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto; /* permite que el texto ocupe espacio disponible */
-  word-break: break-word; /* divide las palabras largas si es necesario */
+  flex: 1 1 auto; 
+  word-break: break-word; 
   font-size: 0.9rem;
 }
 
@@ -740,6 +748,14 @@ a[role="button"]:disabled {
 
 /* Mostrar solo en pantallas pequeñas */
 @media (max-width: 480px){
+  .box p {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
   .box-2 {
     height: auto; 
     padding: 15px;
