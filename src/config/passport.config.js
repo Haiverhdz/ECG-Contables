@@ -91,7 +91,7 @@ const initializePassport = () => {
             {
                 clientID: googleClientId,
                 clientSecret: googleClientSecret,
-                callbackURL: "http://localhost:3000/auth/google/callback",
+                callbackURL: "https://ecg-contables.onrender.com/auth/google/callback",
             },
             async (request, accessToken, refreshToken, profile, done) => {
                 try {
