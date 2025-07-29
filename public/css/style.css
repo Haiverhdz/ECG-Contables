@@ -347,7 +347,7 @@ a[role="button"]:disabled {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-size: cover;
   width: 100%;
-  min-height: auto; /* o auto si el contenido varía mucho */
+  min-height: auto; 
   padding: 30px 10px;
 }
 
@@ -406,7 +406,7 @@ a[role="button"]:disabled {
     .services-1 {
       flex-direction: column;
       align-items: center;
-      margin-right: 25px;
+      margin-right: 0px;
       margin-bottom: 20px;
       padding: 10px;
     }
@@ -438,7 +438,7 @@ a[role="button"]:disabled {
     padding: 0px;
     margin: 0px;
     width: 100%;
-    height: 600px;
+    height: 650px;
   }
   
   .section-box-2{
@@ -451,7 +451,7 @@ a[role="button"]:disabled {
   }
   .container-box-2{
     margin-top: 20px;
-    margin-right: 25px;
+    margin-right: 45px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -780,12 +780,12 @@ a[role="button"]:disabled {
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 
 .section-box-2{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 450px;
@@ -793,10 +793,10 @@ a[role="button"]:disabled {
 }
 .container-box-2{
   margin-top: 20px;
-  margin-right: 25px;
+  margin-right: 45px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -846,7 +846,7 @@ a[role="button"]:disabled {
   animation: aparecer 1.2s ease-out forwards;
 }
 
-}
+
 
 @media (max-width: 768px) {
   .menu-toggle {
