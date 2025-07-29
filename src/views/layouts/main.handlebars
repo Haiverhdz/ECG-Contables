@@ -15,24 +15,32 @@
   <body>
     <header class="header">
       <img src="../images/contables.png" class="logo" alt="Logo" />
+
+      <!-- Botón de menú visible solo en móviles -->
       <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <!-- Navegación principal -->
       <nav class="container-a">
         <a href="/">Inicio</a>
         <a href="/sobre-nosotros">Sobre nosotros</a>
         <a href="/servicios">Servicios</a>
         <a href="/contacto">Contacto</a>
+
+        <!-- Botón de login/logout -->
+        {{#if user}}
+          <form action="/api/sessions/logout" method="post">
+            <button id="ingreso" type="submit">Salir</button>
+          </form>
+        {{else}}
+          <a id="ingreso" href="/login">Iniciar sesión</a>
+        {{/if}}
       </nav>
-      {{#if user}}
-  <form action="/api/sessions/logout" method="post">
-    <button id="ingreso" type="submit">Salir</button>
-  </form>
-{{else}}
-  <a id="ingreso" href="/login">Iniciar sesión</a>
-{{/if}}
     </header>
+
     <main class="container">
       {{{body}}}
     </main>
- 
-  <script src="/js/index.js"></script>
-</body>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
