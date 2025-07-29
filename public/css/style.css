@@ -254,7 +254,7 @@ a[role="button"]:disabled {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 100px;
-  padding: 10px;
+  padding: 1px;
 }
 
 @keyframes aparecer {
@@ -269,7 +269,7 @@ a[role="button"]:disabled {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   text-align: center;
-  padding: 35px 0;
+  padding: 30px 0;
   font-size: 1.2rem;
   border: 0.5px solid #00f7ff;
   border-radius: 15px;
@@ -467,6 +467,7 @@ a[role="button"]:disabled {
   width: 50px;
   height: 50px;
   padding: 10px;
+  color: white;
 }
 
 .box-2 p {
@@ -1020,13 +1021,6 @@ a[role="button"]:disabled {
     display: none;
   }
 
-  .services-1{
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
 
   .box{
     width: 100%;
