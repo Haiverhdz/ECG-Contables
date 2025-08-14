@@ -334,6 +334,13 @@ a[role="button"]:disabled {
   list-style: none;
 }
 
+.contacto-2 p{
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 1rem;
+}
+
 .container-contacto{
   display: flex;
   flex-direction: column;
@@ -342,6 +349,13 @@ a[role="button"]:disabled {
 
 .container-contacto h1{
   margin: 20px;
+}
+
+.container-contacto p{
+  margin: 1rem;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap:break-word
 }
 
 .section-mision{
@@ -406,7 +420,7 @@ a[role="button"]:disabled {
 
 @media (max-width: 768px){
   @media (max-width: 768px) {
-    .box p {
+      .box p {
       white-space: normal;
       word-break: break-word;
       overflow-wrap: break-word;
@@ -751,9 +765,75 @@ a[role="button"]:disabled {
   cursor: pointer;
 }
 
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.info-text {
+  flex: 1 1 350px;
+  min-width: 280px;
+  max-width: 580px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.info-text h2 {
+  text-align: center;
+  color: #0b5fc0;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  margin: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  white-space: normal;    
+  word-wrap: break-word;     
+  overflow-wrap: break-word; 
+}
+
+.info-image {
+  flex: 1 1 300px;
+  max-width: 420px; 
+}
+
+.info-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
 @media (max-width: 480px){
   .menu-toggle {
     display: block;
+  }
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-text p {
+    font-size: 0.95rem;
+    text-align: center;
   }
   .header {
     gap: 5px;
@@ -867,12 +947,6 @@ a[role="button"]:disabled {
    
 }
 
-
-
-
-
- 
-
 .titles{
   font-size: 50px;
   font-family: "Monomakh", serif;
@@ -892,6 +966,17 @@ a[role="button"]:disabled {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+  }
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info-text h2 {
+    font-size: 1.5rem;
+  }
+  .info-text p {
+    font-size: 0.95rem;
+    text-align: center;
   }
   .header {
     gap: 5px;
@@ -932,7 +1017,8 @@ a[role="button"]:disabled {
   opacity: 0;
   transform: translateY(30px);
   animation: aparecer 1.2s ease-out forwards;
-}}
+}
+};
 
 .section-services{
   background: linear-gradient(rgba(10, 10, 10, 0.7),
